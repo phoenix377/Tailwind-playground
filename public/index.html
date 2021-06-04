@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="h-screen w-full bg-yellow-100 relative">
+
+    <div class="max-w-base h-full mx-auto relative">
+
+        <div class="h-full lg:flex flex-wrap lg:items-center justify-between p-9 md:py-28 lg:py-0 md:px-17.5 lg:px-0">
+
+            <!-- CONTENT -->
+            <div class="w-full lg:max-w-md">
+                <div class="text-brand-primary">
+
+                    <h2 class="text-stroke text-lg md:text-3xl text-brand-accent font-extrabold uppercase invisible">
+                        Results of an impaired
+                    </h2>
+
+                    <h2 class="text-2xl md:text-3xl font-extrabold uppercase">
+                        Prefrontal Cortex
+                    </h2>
+                    <!-- <br class="hidden md:block"> -->
+                    <p class="text-sm md:text-2xl font-medium lg:py-6 pr-20 lg:pr-12">
+                        Responsible for planning, judgment and impulse control.
+                    </p>
+
+                    <button
+                        class="bg-brand-accent hover:bg-bran border border-brand-primary filter drop-shadow-button py-2 px-4 mt-7 md:mt-5 lg:mt-0">
+                        <span class="block text-2xs font-extrabold uppercase">
+                            What happens when you drink alcohol?
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- BRAIN -->
+            <div class="relative flex items-center justify-center lg:justify-end pt-20 md:pt-28 lg:pt-0">
+
+                <!-- active => (add) blur filter  => blur-lg -->
+                <div class="filter max-w-medium lg:max-w-none">
+
+                    <!-- When blue filter active => pointer-events-none -->
+                    <div class="animation-wrap relative flex justify-center">
+                        <div class="inline-block relative -m-1 md:m-0">
+                            <img class="inline-block mx-auto" src="assets/Brain.svg" alt="">
+
+
+                            <div>
+                                <div class="button-circle button-top-right absolute">
+                                    <button class="filter drop-shadow-circle">
+                                        <img class="w-7.5 h-7.5 md:h-full md:w-full" src="assets/circle-button.svg"
+                                            alt="">
+                                    </button>
+                                </div>
+                                <div class="button-circle button-center absolute">
+                                    <button class="filter drop-shadow-circle">
+                                        <img class="w-7.5 h-7.5 md:h-full md:w-full" src="assets/circle-button.svg"
+                                            alt="">
+                                    </button>
+                                </div>
+                                <div class="button-circle button-center-bottom absolute">
+                                    <button class="filter drop-shadow-circle">
+                                        <img class="w-7.5 h-7.5 md:h-full md:w-full" src="assets/circle-button.svg"
+                                            alt="">
+                                    </button>
+                                </div>
+                                <div class="button-circle button-bottom absolute">
+                                    <button class="filter drop-shadow-circle">
+                                        <img class="w-7.5 h-7.5 md:h-full md:w-full" src="assets/circle-button.svg"
+                                            alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FIRST BUTTON -->
+                        <div class="popup-images">
+                            <img class="class-at-noon" src="./assets/class-at-noon.svg" alt="">
+                            <img class="do-it" src="./assets/do-it.svg" alt="">
+                            <img class="prolly-shouldnt" src="./assets/prolly-shouldnt.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="w-full flex items-center md:justify-between absolute bottom-0 px-5 mb-7.5 lg:mb-0 md:px-10 lg:p-10 z-50">
+        <button class="w-9 h-9 bg-brand-primary inline-flex items-center justify-center rounded-full shadow-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="#FFA37B">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+            </svg>
+        </button>
+
+        <div class="flex md:space-x-5 ml-3 md:ml-0">
+            <button
+                class="hidden md:block bg-yellow-100 text-brand-primary font-extrabold border border-brand-primary uppercase opacity-30 shadow-button px-5 py-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22" fill="none">
+                    <path d="M10.875 1L1.125 11L10.875 21" stroke="#340AAB" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <button
+                class="w-61 md:w-auto bg-yellow-100 text-sm md:text-lg text-brand-primary font-extrabold border border-brand-primary uppercase opacity-30 shadow-button px-20 py-2 md:py-3">
+                next
+            </button>
+        </div>
+    </div>
+
+</body>
+
+
+
+<script>
+    const buttons = document.querySelectorAll('.button-circle button')
+    const animationWrapActive = document.querySelector('.animation-wrap')
+
+    buttons.forEach(button => button.addEventListener('click', e => {
+        e.preventDefault();
+
+        const buttonActive = document.querySelector('.button-circle button.active')
+
+        button.classList.toggle('active')
+        animationWrapActive.classList.toggle('active')
+    }))
+</script>
+
+</html>

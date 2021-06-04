@@ -1,0 +1,27 @@
+@font-face{
+    font-family:"qanelas-regular";
+    src:url("https://dafonttop.com/wp-data/q/967/8967/file/Qanelas-Regular.ttf") format("woff"),
+    url("https://dafonttop.com/wp-data/q/967/8967/file/Qanelas-Regular.ttf") format("opentype"),
+    url("https://dafonttop.com/wp-data/q/967/8967/file/Qanelas-Regular.ttf") format("truetype");
+}
+
+@font-face{
+    font-family:"qanelas-bold";
+    src:url("https://dafonttop.com/wp-data/q/967/8967/file/Qanelas-Bold.ttf") format("woff"),
+    url("https://dafonttop.com/wp-data/q/967/8967/file/Qanelas-Bold.ttf") format("opentype"),
+    url("https://dafonttop.com/wp-data/q/967/8967/file/Qanelas-Bold.ttf") format("truetype");
+}
+
+@font-face{
+    font-family:"qanelas-semibold";
+    src:url("https://dafonttop.com/wp-data/q/967/8967/file/Qanelas-SemiBold.ttf") format("woff"),
+    url("https://dafonttop.com/wp-data/q/967/8967/file/Qanelas-SemiBold.ttf") format("opentype"),
+    url("https://dafonttop.com/wp-data/q/967/8967/file/Qanelas-SemiBold.ttf") format("truetype");
+}
+
+@font-face{
+    font-family:"qanelas-extrabold";
+    src:url("https://dafonttop.com/wp-data/q/967/8967/file/Qanelas-ExtraBold.otf") format("woff"),
+    url("https://dafonttop.com/wp-data/q/967/8967/file/Qanelas-ExtraBold.otf") format("opentype"),
+    url("https://dafonttop.com/wp-data/q/967/8967/file/Qanelas-ExtraBold.otf") format("truetype");
+}

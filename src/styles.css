@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    button {
+        @apply focus:outline-none
+    }
+}
+
+.text-stroke {
+    -webkit-text-stroke: 0.5px #340AAB;
+}
+
+.button-circle button {
+    transition: .2s ease-in-out;
+}
+.button-circle button.active {
+    border-radius: 50%;
+    transform: scale(1.7);
+    transition: transform .2s ease-in-out;
+}
+
+.button-top-right {
+    top: 20%;
+    right: 10.5%;
+}
+
+.button-center {
+    top: 42%;
+    right: 46%;
+}
+
+.button-center-bottom {
+    left: 48%;
+    bottom: 25%;
+}
+
+.button-bottom {
+    left: 37.5%;
+    bottom: -2.5%;
+}
+
+
+/* IMAGES */
+.class-at-noon,
+.do-it,
+.prolly-shouldnt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+.animation-wrap.active .class-at-noon {
+    transform: translate(-10rem, -11rem);
+}
+
+.animation-wrap.active .do-it {
+    transform: translate(-10.5rem, 3.5rem);
+}
+
+.animation-wrap.active .prolly-shouldnt{
+    transform: translate(3.5rem, 1.5rem);
+}
+
+@media  screen and (max-width: 1023px){
+    .class-at-noon {
+        width: 251.16px;
+        height: 203.23px;
+    }
+
+    .do-it {
+        width: 107.29px;
+        height: 107.29px;
+    }
+
+    .prolly-shouldnt {
+        width: 158.57px;
+        height: 158.57px;
+    }
+}
+
+@media  screen and (max-width: 767px){
+    .class-at-noon {
+        width: 131px;
+        height: 106px;
+    }
+
+    .do-it {
+        width: 68px;
+        height: 68px;
+    }
+
+    .prolly-shouldnt {
+        width: 100.5px;
+        height: 100.5px;
+    }
+}
+
+
+
+@media  screen and (min-width: 767px){
+    /* class-at-noon */
+
+    .animation-wrap.active .class-at-noon {
+        transform: translate(-21rem, -16.5rem);
+    }
+
+    .animation-wrap.active .do-it {
+        transform: translate(-16.5rem, 5rem);
+    }
+    
+    .animation-wrap.active .prolly-shouldnt{
+        transform: translate(7rem, 2.5rem);
+    }
+}
+
+
+@media  screen and (min-width: 1024px){
+    /* class-at-noon */
+
+    .animation-wrap.active .class-at-noon {
+        transform: translate(-150%, -140%);
+    }
+
+    .animation-wrap.active .do-it {
+        transform: translate(-20rem, 6rem);
+    }
+    
+    .animation-wrap.active .prolly-shouldnt{
+        transform: translate(7rem, 2.5rem);
+    }
+}
